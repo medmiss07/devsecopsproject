@@ -1,6 +1,9 @@
 
 FROM nginx:alpine
 
+# Upgrade base packages to pull in security fixes (libpng >= 1.6.51)
+RUN apk update && apk upgrade --no-cache
+
 # Nginx server config with caching and security headers
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
