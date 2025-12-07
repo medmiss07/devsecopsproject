@@ -1,0 +1,28 @@
+name: CI/CD - gymbrand-site
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+    env:
+      DOCKER_IMAGE_NAME: ${{ secrets.DOCKERHUB_USERNAME }}/gymbrand-site:latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Login to Docker Hub
+        uses: docker/login-action@v2
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+
+      - name: Build Docker image
+        run: docker build -t $DOCKER_IMAGE_NAME .
+
+      - name: Push Docker image
+        run: docker push $DOCKER_IMAGE_NAME

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GymBrand — Performance Clothing</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#">GymBrand</a>
+      <nav class="nav">
+        <a href="#men">Men</a>
+        <a href="#women">Women</a>
+        <a href="#new">New</a>
+        <a href="#sale" class="highlight">Sale</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <h1>Train harder. Look sharper.</h1>
+        <p>Premium performance apparel engineered for movement, comfort, and style. Built for the gym, designed for everywhere.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#shop">Shop Collection</a>
+          <a class="btn ghost" href="#story">Our Story</a>
+        </div>
+      </div>
+      <div class="hero-media" role="img" aria-label="Athlete wearing GymBrand outfit"></div>
+    </div>
+  </section>
+
+  <section id="shop" class="section">
+    <div class="container">
+      <div class="section-head">
+        <h2>Featured Drops</h2>
+        <a class="link" href="#all">View all</a>
+      </div>
+      <div class="grid products">
+        <article class="card">
+          <div class="card-media" style="background-image:url('https://images.unsplash.com/photo-1599058917212-d750089bc3a9?q=80&w=1200&auto=format&fit=crop');"></div>
+          <div class="card-body">
+            <h3>Velocity Tee</h3>
+            <p>Breathable, lightweight fabric with 4-way stretch.</p>
+            <div class="price-row">
+              <span class="price">$28</span>
+              <button class="btn small">Add to cart</button>
+            </div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-media" style="background-image:url('https://images.unsplash.com/photo-1521805103424-d8f8430e4455?q=80&w=1200&auto=format&fit=crop');"></div>
+          <div class="card-body">
+            <h3>Flex Joggers</h3>
+            <p>Tapered fit with breathable mesh panels.</p>
+            <div class="price-row">
+              <span class="price">$54</span>
+              <button class="btn small">Add to cart</button>
+            </div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-media" style="background-image:url('https://images.unsplash.com/photo-1498550744921-6e96bda8e3f1?q=80&w=1200&auto=format&fit=crop');"></div>
+          <div class="card-body">
+            <h3>Core Hoodie</h3>
+            <p>Loopback fleece with anti-pill finish.</p>
+            <div class="price-row">
+              <span class="price">$69</span>
+              <button class="btn small">Add to cart</button>
+            </div>
+          </div>
+        </article>
+        <article class="card">
+          <div class="card-media" style="background-image:url('https://images.unsplash.com/photo-1526401485004-2fda9f4c0ebf?q=80&w=1200&auto=format&fit=crop');"></div>
+          <div class="card-body">
+            <h3>Endurance Shorts</h3>
+            <p>Quick-dry fabric and laser-cut ventilation.</p>
+            <div class="price-row">
+              <span class="price">$39</span>
+              <button class="btn small">Add to cart</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="story" class="section muted">
+    <div class="container">
+      <div class="split">
+        <div>
+          <h2>Engineered for performance</h2>
+          <p>We blend technical fabrics with modern silhouettes to deliver apparel that performs in the gym and keeps up with your everyday. Sustainable sourcing, durable construction, and fit that moves.</p>
+          <ul class="list-check">
+            <li>Moisture-wicking and quick-dry</li>
+            <li>Eco-conscious materials</li>
+            <li>Tested by athletes</li>
+          </ul>
+        </div>
+        <div class="story-media" role="img" aria-label="Close-up of performance fabric"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="newsletter section">
+    <div class="container">
+      <h2>Join the GymBrand crew</h2>
+      <p>Get early access to drops, training tips, and exclusive offers.</p>
+      <form class="subscribe" onsubmit="event.preventDefault(); alert('Subscribed!');">
+        <input type="email" required placeholder="Your email" />
+        <button class="btn primary" type="submit">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <div class="logo">GymBrand</div>
+        <p>Performance clothing for everyday athletes.</p>
+      </div>
+      <div class="footer-right">
+        <a href="#">Shipping & Returns</a>
+        <a href="#">Size Guide</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
